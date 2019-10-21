@@ -1,0 +1,33 @@
+{
+  "name": "expressi",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "npm run prod",
+    "server": "babel-node ./src/bin/www",
+    "server:prod": "node ./dist/bin/www",
+    "dev": "set NODE_ENV=development & npm-run-all server",
+    "clean": "rimraf dist",
+    "build": "babel ./src --out-dir dist",
+    "prod": "set NODE_ENV=production & npm-run-all clean build server:prod",
+    "watch": "nodemon",
+    "old-start": "node ./bin/www",
+    "old-dev": "set NODE_ENV=development && npm-run-all server"
+  },
+  "dependencies": {
+    "axios": "^0.19.0",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "morgan": "~1.9.1",
+    "npm-run-all": "^4.1.5",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/node": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "nodemon": "^1.19.3"
+  }
+}
