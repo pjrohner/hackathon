@@ -13,3 +13,5 @@ repo.iml
 *.ntvs*
 *.njsproj
 *.sln
+
+*.code-workspace
