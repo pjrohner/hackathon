@@ -1,4 +1,4 @@
-# basf-kleber
+# kleber-app
 
 ## Project setup
 ```

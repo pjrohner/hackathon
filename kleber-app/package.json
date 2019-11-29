@@ -1,5 +1,6 @@
 {
-  "name": "basf-kleber",
+  "name": "kleber-app",
+  "description": "A sample application with Vue.js",
   "version": "0.1.0",
   "private": true,
   "scripts": {
