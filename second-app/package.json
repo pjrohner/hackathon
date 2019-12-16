@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "serve-all": "start npm run serve-data & start npm run serve",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "serve-data": "json-server ./data/data.json -d 500 -p 8000 -w"
   },
   "dependencies": {
     "core-js": "^3.4.3",

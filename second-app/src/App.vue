@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark>
+    <v-app-bar app color="primary">
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -22,10 +22,13 @@
       </div>
 
       <v-spacer></v-spacer>
-      <v-btn>
+      <v-btn class="mx-2">
         <router-link to="/">Home</router-link>
       </v-btn>
-      <v-btn>
+      <v-btn class="mx-2">
+        <router-link to="/feedback">Feedback</router-link>
+      </v-btn>
+      <v-btn class="mx-2">
         <router-link to="/about">About</router-link>
       </v-btn>
 

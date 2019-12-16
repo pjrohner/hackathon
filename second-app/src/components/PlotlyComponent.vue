@@ -1,12 +1,13 @@
 <template>
   <div>
-    <h1>Plotly Chart ...</h1>
+    <h2>Summary Chart</h2>
+    <hr />
     <div>
       <Plotly
         @click="chartClicked"
-        :data="getScatterData.data"
-        :layout="getScatterData.layout"
-        :options="getScatterData.options"
+        :data="scatterData.data"
+        :layout="scatterData.layout"
+        :options="scatterData.options"
         :autoResize="true"
         :display-mode-bar="false"
       ></Plotly>
@@ -38,7 +39,7 @@ export default {
   },
   computed: {
     ...mapGetters([
-      "getScatterData",
+      "scatterData",
       "getError"
       // ...
     ])
